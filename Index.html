@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script>
+      const redirects = {
+"what_brand_of_wet_cat": "https://lvnta.com/lv_KCo3U7R678c6qWrXKR",
+"what_are_the_best_essential": "https://lvnta.com/lv_r0Scv3NTalrIii7hYU",
+"whats_the_best_play_kitchen": "https://lvnta.com/lv_DIVfCjlEUREXQvY7Ze",
+"running_vest_which_one": "https://lvnta.com/lv_y7BvaIldzNp6DniLQM",
+"your_preferred_mosquito_repellent_for": "https://lvnta.com/lv_5rLjdUIApvlRFjxzzl",
+"i_cant_stop_buying_joggers": "https://lvnta.com/lv_DXitRW1IrhTeAFWM6n",
+"100_cotton_sheets_usa": "https://lvnta.com/lv_xVAcXjToqx7rcvjH9c",
+"looking_for_the_best_slip": "https://lvnta.com/lv_DH3IR6vGxdniJ9Qjt5",
+"non_toxic_mens_deodorant": "https://lvnta.com/lv_KuwNtFVF4TC1FmnFjQ",
+"best_foundation_brush": "https://lvnta.com/lv_Yu7b9VS8ah62RaMlEl",
+"whats_a_good_bluetooth_headset": "https://lvnta.com/lv_CMcdMxnGUjRjlPVzMF",
+"comfortable_shoessneakers_to_walk_during": "https://lvnta.com/lv_tU4oxAMF6KlUAC8g6X",
+"toilet_bowl_cleaner_mpr93vw": "https://lvnta.com/lv_UjkzKpRahaF9IzVxvC",
+"ecollars_vs_shock_collars_evaluating": "https://lvnta.com/lv_2qQnuA1hYLIHjC4eHf",
+"back_sleeper_in_need_of": "https://lvnta.com/lv_42chgVTeQjqKy2IWhe",
+"the_best_earbuds_for_gaming": "https://lvnta.com/lv_slx7lxQ9rdqzBxAIht",
+"iphone_16_pro_case_suggestions": "https://lvnta.com/lv_H4t9N0vrE7KzTkt9Lz",
+"good_budget_friendly_backpack_cooler": "https://lvnta.com/lv_aFRDaEy3BtSapU4qUS",
+"best_sunscreen_for_your_face": "https://lvnta.com/lv_mpj5Q8daOFIfrPjL3S",
+"do_you_use_a_plant": "https://lvnta.com/lv_fnZCLxOmKSgLQ56GjS",
+"my_cat_wants_to_go": "https://lvnta.com/lv_rFSHMbEVj66p6OlT7I",
+"whats_your_favorite_the_best": "https://lvnta.com/lv_MtBwlVwr97OWVQhLAI",
+"what_are_some_good_shampoo": "https://lvnta.com/lv_um6ZVCxpKVNWG1XzOY",
+"any_recommendations_for_neckband_earphones": "https://lvnta.com/lv_qY91Fcid4Sraw8BRPl",
+"best_work_shoes_for_men": "https://lvnta.com/lv_Qk5CFnejK1SzbwoX1d",
+"cantilever_umbrella_around_pool_recommendations": "https://lvnta.com/lv_ysumfO5gjf1UZ63WtF",
+"best_wireless_ear_buds_for": "https://lvnta.com/lv_iHz8DEVUgJhgt1Q0N0",
+"i_analyzed_reddit_for_the": "https://lvnta.com/lv_Ve7NPl93gMRdGoGIO9",
+"best_fresh_smelling_laundry_detergent": "https://lvnta.com/lv_d6p4hHctKdluM7l0to",
+"curl_refresher_spray": "https://lvnta.com/lv_Cod0BPAp3lTVdtzBnN"
+      };
+      function getParam(name) {
+        const params = new URLSearchParams(window.location.search);
+        return params.get(name);
+      }
+      const key = getParam("to");
+      const url = redirects[key?.toLowerCase()];
+      if (url) {
+        window.location.replace(url);
+      } else {
+        document.write("<h2>Redirect not found</h2><p>Use ?to=shortname</p>");
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <title>Redirecting...</title>
     <script>
       const redirects = {
-"what_brand_of_wet_cat": "https://lvnta.com/lv_KCo3U7R678c6qWrXKR",
+        "what_brand_of_wet_cat": "https://lvnta.com/lv_KCo3U7R678c6qWrXKR",
 "what_are_the_best_essential": "https://lvnta.com/lv_r0Scv3NTalrIii7hYU",
 "whats_the_best_play_kitchen": "https://lvnta.com/lv_DIVfCjlEUREXQvY7Ze",
 "running_vest_which_one": "https://lvnta.com/lv_y7BvaIldzNp6DniLQM",
@@ -35,12 +35,15 @@
 "best_fresh_smelling_laundry_detergent": "https://lvnta.com/lv_d6p4hHctKdluM7l0to",
 "curl_refresher_spray": "https://lvnta.com/lv_Cod0BPAp3lTVdtzBnN"
       };
+
       function getParam(name) {
         const params = new URLSearchParams(window.location.search);
         return params.get(name);
       }
+
       const key = getParam("to");
       const url = redirects[key?.toLowerCase()];
+
       if (url) {
         window.location.replace(url);
       } else {
